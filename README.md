@@ -22,3 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Ruby version
+
+Ruby version - 3.1.3
+Rails version - 7.0.4
+
+Follow this tutorial to download rails and ruby with rbenv => https://gorails.com/setup/ubuntu/22.04
