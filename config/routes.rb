@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :sessions, only: [:create]
+  resource :register, only: [:create]
+  root to: 'static#home'
 end
