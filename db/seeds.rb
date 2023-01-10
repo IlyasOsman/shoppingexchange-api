@@ -101,6 +101,42 @@ stores = Store.create([{
     link: "link",
     reviews: 4,
     product_id: 2
+  },
+  {
+    id: 5,
+    name: "Amazon",
+    price: "325",
+    fee: "130",
+    link: "link",
+    reviews: 4,
+    product_id: 3
+  },
+  {
+    id: 6,
+    name: "Jumia",
+    price: "110",
+    fee: "100",
+    link: "link",
+    reviews: 4,
+    product_id: 3
+  },
+  {
+    id: 7,
+    name: "Amazon",
+    price: "899",
+    fee: "130",
+    link: "link",
+    reviews: 4,
+    product_id: 4
+  },
+  {
+    id: 8,
+    name: "Jumia",
+    price: "999",
+    fee: "100",
+    link: "link",
+    reviews: 4,
+    product_id: 4
   }
 ])
 
