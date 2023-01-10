@@ -8,7 +8,7 @@
 puts "seeding..."
 
 products = Product.create([{
-    id: "01",
+    id: 1,
     title: "Short T-shirt",
     price: 350,
     image01: "product_01_image_01",
@@ -19,7 +19,7 @@ products = Product.create([{
     desc: "Material Cotton : Lycra T-shirt, Collar shape: round collar T-shirt, Colour: Multicolour T-shirt, Style: casual T-shirt, Model : slim model T-shirt, Quality: Print T-shirt, Perfect: Finishing, Attention: Please For transportation needs, the cloth that you've received will have a fold phenomenon. Please don't worry this fold situation will disappear after the first time you clear or ironing. About color Pictures are only samples for reference. Due to limitations in photography and the inevitable differences in monitor settings, the colors shown in the photograph may not correspond 100% to those in the items themselves. About size All dimensions are measured by hand, there may be 2-3cm deviations. Please ignore the tag size comes with the cloth. The tag size sometimes can be a larger than our description size because those are for Chinese. We are 1 or 2 sizes smaller than European and  African people Choose the larger size if your size between two sizes. Thank you " },
 
     {
-        id: "02",
+        id: 2,
         title: "Samsung Galaxy",
         price: 45000,
         image01: "product_02_image_01",
@@ -31,7 +31,7 @@ products = Product.create([{
 
     
   {
-    id: "03",
+    id: 3,
     title: "Power Banks",
     price: 2500,
     image01: "product_03_image_01",
@@ -43,7 +43,7 @@ products = Product.create([{
 
 
     {
-        id: "04",
+        id: 4,
         title: "MacBook Air",
         price: 110.0,
         image01:"product_04_image_01",
@@ -56,7 +56,7 @@ products = Product.create([{
 
     
   {
-    id: "05",
+    id: 5,
     title: "Mens Shirts",
     price: 999,
     image01: "product_05_image_01",
@@ -67,7 +67,7 @@ products = Product.create([{
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque." } ])
 
 stores = Store.create([{
-    id: "01",
+    id: 1,
     name: "Amazon",
     price: "325",
     fee: "130",
@@ -76,7 +76,7 @@ stores = Store.create([{
     product_id: 1
   },
   {
-    id: "02",
+    id: 2,
     name: "Jumia",
     price: "110",
     fee: "100",
@@ -85,7 +85,7 @@ stores = Store.create([{
     product_id: 1
   },
   {
-    id: "03",
+    id: 3,
     name: "Amazon",
     price: "899",
     fee: "130",
@@ -94,7 +94,7 @@ stores = Store.create([{
     product_id: 2
   },
   {
-    id: "04",
+    id: 4,
     name: "Jumia",
     price: "999",
     fee: "100",
