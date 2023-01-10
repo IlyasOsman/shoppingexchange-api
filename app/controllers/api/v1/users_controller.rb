@@ -1,25 +1,25 @@
 class Api::V1::UsersController < ApplicationController
-    # path: app/controllers/api/v1/users_controller.rb
+  # path: app/controllers/api/v1/users_controller.rb
 
-    skip_before_action :authorized, only: [:create]
+  skip_before_action :authorized, only: [:create]
 
-    def create
-        user = User.create(user_params)
-        if user.valid?
-            token = encode_token(user_id: user.id)
-            render json: { user: UserSerializer.new(user), jwt: token }, status: :created
-        else
-            render json: { error: 'failed to create user' }, status: :unprocessable_entity
-        end
+  def create
+    user = User.create(user_params)
+    if user.valid?
+      token = encode_token(user_id: user.id)
+      render json: { user: UserSerializer.new(user), jwt: token }, status: :created
+    else
+      render json: { error: 'failed to create user' }, status: :unprocessable_entity
     end
+  end
 
-    def profile
-        render json: { user: UserSerializer.new(current_user) }, status: :accepted
-    end
+  def profile
+    render json: { user: UserSerializer.new(current_user) }, status: :accepted
+  end
 
-    private
+  private
 
-    def user_params
-        params.require(:user).permit(:username, :password, :email)
-    end
+  def user_params
+    params.require(:user).permit(:username, :password, :email)
+  end
 end
