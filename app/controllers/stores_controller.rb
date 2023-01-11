@@ -2,8 +2,8 @@ class StoresController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
   def index
-      stores = Store.all
-      render json: stores, include: :products
+    stores = Store.all
+    render json: stores, include: :products
   end
 
   private
