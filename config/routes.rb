@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resource :products, only: [:gets]
+  resources :stores
+  resources :products
   
   # config/routes.rb
   namespace :api do
