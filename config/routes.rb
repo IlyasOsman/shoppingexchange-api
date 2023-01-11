@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resource :products, only: [:gets]
+  
   # config/routes.rb
   namespace :api do
     namespace :v1 do
