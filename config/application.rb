@@ -18,6 +18,14 @@ module JwtBackendPrac
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    if Rails.env == "production"
+      config.session_store :cookie_store, key: "_shopexchange_app", domain: "*"
+    else
+      config.session_store :cookie_store, key: "_shopexchange_app"
+    end
+
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use config.session_store, config.session_options
 
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.

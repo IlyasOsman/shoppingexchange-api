@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::API
   # Path: app/controllers/application_controller.rb
+  
+  # skip_before_action :authorized, only: [:index, :show]
+
   before_action :authorized
   def encode_token(payload)
     JWT.encode(payload, 'my_s3cr3t')
