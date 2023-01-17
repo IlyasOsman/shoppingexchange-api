@@ -25,7 +25,7 @@ default: &default
 
 development:
   <<: *default
-  database: product_comparator_development
+  database: booking_app_development
   username: postgres
   password: kimutai
 
